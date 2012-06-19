@@ -13,6 +13,19 @@
 		613CA3431561501900946A9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613CA3411561501900946A9C /* InfoPlist.strings */; };
 		613CA3451561501900946A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3441561501900946A9C /* main.m */; };
 		613CA3491561501900946A9C /* PhotoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* PhotoAppAppDelegate.m */; };
+		618A2F4815623C410069780D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A2F4715623C410069780D /* Twitter.framework */; };
+		618A2F5015624B290069780D /* quote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F4F15624B290069780D /* quote.plist */; };
+		618A2F5815624E910069780D /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A2F5615624E900069780D /* WaitingViewController.m */; };
+		618A2F5915624E910069780D /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F5715624E900069780D /* WaitingViewController.xib */; };
+		61CA8A9915620EC800E47BD5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9815620EC800E47BD5 /* MessageUI.framework */; };
+		61CA8A9E15620EE800E47BD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */; };
+		61CA8AA015620EEF00E47BD5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */; };
+		61CA8AA215620EFB00E47BD5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8AA115620EFB00E47BD5 /* Security.framework */; };
+		61D8EADF156151890009FD3B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EADD156151890009FD3B /* MainViewController.m */; };
+		61D8EAE0156151890009FD3B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EADE156151890009FD3B /* MainViewController.xib */; };
+		61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EAE6156154B10009FD3B /* RenderViewController.m */; };
+		61D8EAE9156154B10009FD3B /* RenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAE7156154B10009FD3B /* RenderViewController.xib */; };
+		61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +33,29 @@
 		613CA3381561501900946A9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		613CA33A1561501900946A9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		613CA33C1561501900946A9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		613CA3401561501900946A9C /* PhotoApp-Info.plist */ = {isa = PBXFileReference; path = "PhotoApp-Info.plist"; sourceTree = "<group>"; };
+		613CA3401561501900946A9C /* PhotoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoApp-Info.plist"; sourceTree = "<group>"; };
 		613CA3421561501900946A9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		613CA3441561501900946A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		613CA3461561501900946A9C /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
-		613CA3471561501900946A9C /* PhotoAppAppDelegate.h */ = {isa = PBXFileReference; path = PhotoAppAppDelegate.h; sourceTree = "<group>"; };
+		613CA3461561501900946A9C /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
+		613CA3471561501900946A9C /* PhotoAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAppAppDelegate.h; sourceTree = "<group>"; };
 		613CA3481561501900946A9C /* PhotoAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAppAppDelegate.m; sourceTree = "<group>"; };
+		618A2F4715623C410069780D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		618A2F4F15624B290069780D /* quote.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quote.plist; sourceTree = "<group>"; };
+		618A2F5515624E900069780D /* WaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingViewController.h; sourceTree = "<group>"; };
+		618A2F5615624E900069780D /* WaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingViewController.m; sourceTree = "<group>"; };
+		618A2F5715624E900069780D /* WaitingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitingViewController.xib; sourceTree = "<group>"; };
+		61CA8A9815620EC800E47BD5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		61CA8A9B15620EE200E47BD5 /* bundle1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = bundle1.o; path = usr/lib/bundle1.o; sourceTree = SDKROOT; };
+		61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		61CA8AA115620EFB00E47BD5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		61D8EADC156151890009FD3B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		61D8EADD156151890009FD3B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		61D8EADE156151890009FD3B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		61D8EAE5156154B10009FD3B /* RenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderViewController.h; sourceTree = "<group>"; };
+		61D8EAE6156154B10009FD3B /* RenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderViewController.m; sourceTree = "<group>"; };
+		61D8EAE7156154B10009FD3B /* RenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenderViewController.xib; sourceTree = "<group>"; };
+		61D8EAEC15615F680009FD3B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618A2F4815623C410069780D /* Twitter.framework in Frameworks */,
+				61CA8AA215620EFB00E47BD5 /* Security.framework in Frameworks */,
+				61CA8AA015620EEF00E47BD5 /* SystemConfiguration.framework in Frameworks */,
+				61CA8A9E15620EE800E47BD5 /* AVFoundation.framework in Frameworks */,
+				61CA8A9915620EC800E47BD5 /* MessageUI.framework in Frameworks */,
 				613CA3391561501900946A9C /* UIKit.framework in Frameworks */,
 				613CA33B1561501900946A9C /* Foundation.framework in Frameworks */,
 				613CA33D1561501900946A9C /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +80,7 @@
 		613CA3291561501800946A9C = {
 			isa = PBXGroup;
 			children = (
+				61CA8A9B15620EE200E47BD5 /* bundle1.o */,
 				613CA33E1561501900946A9C /* PhotoApp */,
 				613CA3371561501900946A9C /* Frameworks */,
 				613CA3351561501900946A9C /* Products */,
@@ -62,6 +98,11 @@
 		613CA3371561501900946A9C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				618A2F4715623C410069780D /* Twitter.framework */,
+				61CA8AA115620EFB00E47BD5 /* Security.framework */,
+				61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */,
+				61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */,
+				61CA8A9815620EC800E47BD5 /* MessageUI.framework */,
 				613CA3381561501900946A9C /* UIKit.framework */,
 				613CA33A1561501900946A9C /* Foundation.framework */,
 				613CA33C1561501900946A9C /* CoreGraphics.framework */,
@@ -72,6 +113,8 @@
 		613CA33E1561501900946A9C /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				61D8EADB1561516D0009FD3B /* Resources */,
+				61D8EAD9156151670009FD3B /* Classes */,
 				613CA3471561501900946A9C /* PhotoAppAppDelegate.h */,
 				613CA3481561501900946A9C /* PhotoAppAppDelegate.m */,
 				613CA33F1561501900946A9C /* Supporting Files */,
@@ -82,12 +125,37 @@
 		613CA33F1561501900946A9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				618A2F4F15624B290069780D /* quote.plist */,
+				61D8EAEC15615F680009FD3B /* Entitlements.plist */,
 				613CA3401561501900946A9C /* PhotoApp-Info.plist */,
 				613CA3411561501900946A9C /* InfoPlist.strings */,
 				613CA3441561501900946A9C /* main.m */,
 				613CA3461561501900946A9C /* PhotoApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61D8EAD9156151670009FD3B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				618A2F5515624E900069780D /* WaitingViewController.h */,
+				618A2F5615624E900069780D /* WaitingViewController.m */,
+				618A2F5715624E900069780D /* WaitingViewController.xib */,
+				61D8EADC156151890009FD3B /* MainViewController.h */,
+				61D8EADD156151890009FD3B /* MainViewController.m */,
+				61D8EADE156151890009FD3B /* MainViewController.xib */,
+				61D8EAE5156154B10009FD3B /* RenderViewController.h */,
+				61D8EAE6156154B10009FD3B /* RenderViewController.m */,
+				61D8EAE7156154B10009FD3B /* RenderViewController.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		61D8EADB1561516D0009FD3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				613CA3431561501900946A9C /* InfoPlist.strings in Resources */,
+				61D8EAE0156151890009FD3B /* MainViewController.xib in Resources */,
+				61D8EAE9156154B10009FD3B /* RenderViewController.xib in Resources */,
+				61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */,
+				618A2F5015624B290069780D /* quote.plist in Resources */,
+				618A2F5915624E910069780D /* WaitingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +226,9 @@
 			files = (
 				613CA3451561501900946A9C /* main.m in Sources */,
 				613CA3491561501900946A9C /* PhotoAppAppDelegate.m in Sources */,
+				61D8EADF156151890009FD3B /* MainViewController.m in Sources */,
+				61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */,
+				618A2F5815624E910069780D /* WaitingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +251,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -190,6 +266,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -199,7 +276,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -208,6 +285,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -216,6 +294,7 @@
 		613CA34D1561501900946A9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
@@ -227,6 +306,7 @@
 		613CA34E1561501900946A9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
@@ -254,6 +334,7 @@
 				613CA34E1561501900946A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
