@@ -14,9 +14,9 @@
 		613CA3451561501900946A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3441561501900946A9C /* main.m */; };
 		613CA3491561501900946A9C /* PhotoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* PhotoAppAppDelegate.m */; };
 		618A2F4815623C410069780D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A2F4715623C410069780D /* Twitter.framework */; };
-		618A2F5015624B290069780D /* quote.plist in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F4F15624B290069780D /* quote.plist */; };
 		618A2F5815624E910069780D /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A2F5615624E900069780D /* WaitingViewController.m */; };
 		618A2F5915624E910069780D /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F5715624E900069780D /* WaitingViewController.xib */; };
+		618B3277156480F100C50605 /* quote.txt in Resources */ = {isa = PBXBuildFile; fileRef = 618B3276156480F100C50605 /* quote.txt */; };
 		61CA8A9915620EC800E47BD5 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9815620EC800E47BD5 /* MessageUI.framework */; };
 		61CA8A9E15620EE800E47BD5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */; };
 		61CA8AA015620EEF00E47BD5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */; };
@@ -40,10 +40,10 @@
 		613CA3471561501900946A9C /* PhotoAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAppAppDelegate.h; sourceTree = "<group>"; };
 		613CA3481561501900946A9C /* PhotoAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAppAppDelegate.m; sourceTree = "<group>"; };
 		618A2F4715623C410069780D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		618A2F4F15624B290069780D /* quote.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quote.plist; sourceTree = "<group>"; };
 		618A2F5515624E900069780D /* WaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingViewController.h; sourceTree = "<group>"; };
 		618A2F5615624E900069780D /* WaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingViewController.m; sourceTree = "<group>"; };
 		618A2F5715624E900069780D /* WaitingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitingViewController.xib; sourceTree = "<group>"; };
+		618B3276156480F100C50605 /* quote.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quote.txt; sourceTree = "<group>"; };
 		61CA8A9815620EC800E47BD5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		61CA8A9B15620EE200E47BD5 /* bundle1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = bundle1.o; path = usr/lib/bundle1.o; sourceTree = SDKROOT; };
 		61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -125,7 +125,7 @@
 		613CA33F1561501900946A9C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				618A2F4F15624B290069780D /* quote.plist */,
+				618B3276156480F100C50605 /* quote.txt */,
 				61D8EAEC15615F680009FD3B /* Entitlements.plist */,
 				613CA3401561501900946A9C /* PhotoApp-Info.plist */,
 				613CA3411561501900946A9C /* InfoPlist.strings */,
@@ -212,8 +212,8 @@
 				61D8EAE0156151890009FD3B /* MainViewController.xib in Resources */,
 				61D8EAE9156154B10009FD3B /* RenderViewController.xib in Resources */,
 				61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */,
-				618A2F5015624B290069780D /* quote.plist in Resources */,
 				618A2F5915624E910069780D /* WaitingViewController.xib in Resources */,
+				618B3277156480F100C50605 /* quote.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

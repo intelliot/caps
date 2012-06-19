@@ -82,6 +82,12 @@
 
 - (void)getQueryList
 {   
+    
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"quote" ofType:@"txt"];
+    NSString *quoteStr = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
+
+    self.mQuoteArray = (NSMutableArray *) [quoteStr componentsSeparatedByString:@"\n"];
+    /*
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsPath = [paths objectAtIndex:0];
     NSString *plistPath = [documentsPath stringByAppendingPathComponent:@"quote.plist"];
@@ -95,8 +101,9 @@
     NSString *errorDesc = nil;
     NSPropertyListFormat format;
     NSDictionary *temp = (NSDictionary *) [NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:&errorDesc];
+     */
     
-    self.mQuoteArray = [NSMutableArray arrayWithArray:[temp objectForKey:@"Quote"]];
+//    self.mQuoteArray = [NSMutableArray arrayWithArray:[temp objectForKey:@"Quote"]];
 
 }
 
