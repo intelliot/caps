@@ -262,7 +262,7 @@
 			break;
 		}
 		case MFMailComposeResultSent: {
-            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"Mail was sended successfully." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:@"Mail sent" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
 			[alertView show];
 			[alertView release];
 			break;
