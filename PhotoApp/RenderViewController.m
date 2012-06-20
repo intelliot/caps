@@ -191,7 +191,7 @@
         if(res == TWTweetComposeViewControllerResultDone)
         {
             
-            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Succes!" message:@"Your Tweet was posted succesfully" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Tweet posted" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             
             [alertView show];
             
@@ -200,7 +200,7 @@
         }else if(res == TWTweetComposeViewControllerResultCancelled)
         {
             
-            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Canceled" message:@"Your Tweet was not posted" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Cancelled" message:@"Tweet not posted" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             
             [alertView show];
         }
