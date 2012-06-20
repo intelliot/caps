@@ -175,7 +175,7 @@
 
     TWTweetComposeViewController *twitter = [[TWTweetComposeViewController alloc] init];
     
-    [twitter setInitialText:@""];
+    [twitter setInitialText:@"#CleanCaps"];
     
     
     UIImage *tempImage = [self getShareImage];
@@ -200,7 +200,7 @@
         }else if(res == TWTweetComposeViewControllerResultCancelled)
         {
             
-            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Cancelled" message:@"Tweet not posted" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:nil message:@"Tweet not posted" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             
             [alertView show];
         }
