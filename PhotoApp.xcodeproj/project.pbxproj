@@ -73,6 +73,7 @@
 		A960446A15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CleanCapsMenuBackground.fw@2x.png"; path = "Resources/CleanCapsMenuBackground.fw@2x.png"; sourceTree = "<group>"; };
 		A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CleanCapsIcon.fw.png; path = Resources/CleanCapsIcon.fw.png; sourceTree = "<group>"; };
 		A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CleanCapsIcon.fw@2x.png"; path = "Resources/CleanCapsIcon.fw@2x.png"; sourceTree = "<group>"; };
+		A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+Extensions.h"; sourceTree = "<group>"; };
 		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		A9D5B105159161730067F6EC /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +134,7 @@
 		613CA33E1561501900946A9C /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */,
 				A9D5B102159161730067F6EC /* Libraries */,
 				61D8EADB1561516D0009FD3B /* Resources */,
 				61D8EAD9156151670009FD3B /* Classes */,
