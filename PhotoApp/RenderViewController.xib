@@ -45,6 +45,7 @@
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="841627552"/>
+						<int key="IBUIContentMode">1</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIToolbar" id="303615549">
@@ -53,7 +54,6 @@
 						<string key="NSFrame">{{0, 416}, {320, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -110,11 +110,11 @@
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
-						<object class="NSColor" key="IBUIShadowColor">
+						<object class="NSColor" key="IBUIShadowColor" id="16142120">
 							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
+							<bytes key="NSWhite">MAA</bytes>
 						</object>
-						<string key="IBUIShadowOffset">{1, 1}</string>
+						<string key="IBUIShadowOffset">{2, 3}</string>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">26</float>
 						<int key="IBUINumberOfLines">2</int>
@@ -134,10 +134,7 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="817913126"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MAA</bytes>
-				</object>
+				<reference key="IBUIBackgroundColor" ref="16142120"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
 					<int key="IBUIStatusBarStyle">2</int>
 				</object>

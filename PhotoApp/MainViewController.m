@@ -94,13 +94,30 @@
 
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
+    
     UIImage *capturedImage = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
     
     RenderViewController *renderVc = [[RenderViewController alloc] initWithNibName:@"RenderViewController" bundle:nil];
     
     [picker presentModalViewController:renderVc animated:YES];
     [renderVc setRandomQuote];
-    [renderVc setBackImage:capturedImage];
+    
+    if ( picker.sourceType == UIImagePickerControllerSourceTypeCamera ) {
+        if ( capturedImage.size.height > 480 ) {
+            [renderVc setBackImage:capturedImage :YES];
+        } else {
+            [renderVc setBackImage:capturedImage :NO];
+        }
+    } else {
+        if ( capturedImage.size.height > 480 ) {
+            [renderVc setBackImage:capturedImage :YES];
+        } else {
+            [renderVc setBackImage:capturedImage :NO];
+        }
+    }
+
+    
+
     //    imgCigarView.image = capturedImage;
     
     LOG_EVENT(@"didFinishPickingMedia");

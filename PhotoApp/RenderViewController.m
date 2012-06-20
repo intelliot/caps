@@ -92,7 +92,7 @@
 
 #pragma mark User definitive function
 
-- (void)setBackImage : (UIImage *) image
+- (void)setBackImage : (UIImage *) image : (BOOL) overed
 {
     mBackImageView.image = image;
     
@@ -106,7 +106,18 @@
 										newSize.width,
 										newSize.height);
     
-    mOverlayLabel.frame = CGRectMake(15, self.view.frame.size.height / 2 + image.size.height / 2 - mOverlayLabel.frame.size.height, 290, mOverlayLabel.frame.size.height);
+    if ( overed == YES ) {
+        
+        mOverlayLabel.frame = CGRectMake(15, 400 - mOverlayLabel.frame.size.height, 290, mOverlayLabel.frame.size.height);
+
+        
+    } else {
+
+        mOverlayLabel.frame = CGRectMake(15, self.view.frame.size.height / 2 + image.size.height / 2 - mOverlayLabel.frame.size.height, 290, mOverlayLabel.frame.size.height);
+
+        
+    }
+    
     
 //    mOverlayLabel.frame = CGRectMake(15, self.view.frame.size.height / 2 + image.size.height / 5, mOverlayLabel.frame.size.width, mOverlayLabel.frame.size.height);
 }

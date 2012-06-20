@@ -24,7 +24,7 @@
 - (IBAction)backButtonClicked:(id)sender;
 - (IBAction)shareButtonClicked:(id)sender;
 
-- (void)setBackImage : (UIImage *) image;
+- (void)setBackImage : (UIImage *) image : (BOOL) overed;
 - (void)setRandomQuote;
 - (UIImage *) getShareImage;
 
