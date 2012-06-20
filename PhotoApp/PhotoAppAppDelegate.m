@@ -8,6 +8,7 @@
 
 #import "PhotoAppAppDelegate.h"
 #import "MainViewController.h"
+#import "FlurryAnalytics.h"
 
 @implementation PhotoAppAppDelegate
 
@@ -24,6 +25,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [FlurryAnalytics startSession:@"6XN3TBYBZBJSVYJZNH97"];
+    
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];

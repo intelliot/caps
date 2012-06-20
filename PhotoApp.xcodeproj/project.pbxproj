@@ -34,6 +34,7 @@
 		A960446B15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446A15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png */; };
 		A960446E15906F9A00228B8A /* CleanCapsIcon.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */; };
 		A960446F15906F9A00228B8A /* CleanCapsIcon.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */; };
+		A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,8 @@
 		A960446A15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CleanCapsMenuBackground.fw@2x.png"; path = "Resources/CleanCapsMenuBackground.fw@2x.png"; sourceTree = "<group>"; };
 		A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CleanCapsIcon.fw.png; path = Resources/CleanCapsIcon.fw.png; sourceTree = "<group>"; };
 		A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CleanCapsIcon.fw@2x.png"; path = "Resources/CleanCapsIcon.fw@2x.png"; sourceTree = "<group>"; };
+		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		A9D5B105159161730067F6EC /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				613CA3391561501900946A9C /* UIKit.framework in Frameworks */,
 				613CA33B1561501900946A9C /* Foundation.framework in Frameworks */,
 				613CA33D1561501900946A9C /* CoreGraphics.framework in Frameworks */,
+				A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +133,7 @@
 		613CA33E1561501900946A9C /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9D5B102159161730067F6EC /* Libraries */,
 				61D8EADB1561516D0009FD3B /* Resources */,
 				61D8EAD9156151670009FD3B /* Classes */,
 				613CA3471561501900946A9C /* PhotoAppAppDelegate.h */,
@@ -180,6 +185,23 @@
 				A960446515906F2A00228B8A /* ChooseButton.fw@2x.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9D5B102159161730067F6EC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5B103159161730067F6EC /* FlurryAnalytics */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		A9D5B103159161730067F6EC /* FlurryAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				A9D5B104159161730067F6EC /* FlurryAnalytics.h */,
+				A9D5B105159161730067F6EC /* libFlurryAnalytics.a */,
+			);
+			path = FlurryAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +352,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -342,6 +368,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
