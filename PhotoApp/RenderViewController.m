@@ -95,6 +95,20 @@
 - (void)setBackImage : (UIImage *) image
 {
     mBackImageView.image = image;
+    
+	CGSize maxSize = CGSizeMake(290, MAXFLOAT);
+	CGSize newSize = [mOverlayLabel.text sizeWithFont:mOverlayLabel.font
+									   constrainedToSize:maxSize
+										   lineBreakMode:mOverlayLabel.lineBreakMode];
+	
+	mOverlayLabel.frame = CGRectMake(mOverlayLabel.frame.origin.x,
+										mOverlayLabel.frame.origin.y,
+										newSize.width,
+										newSize.height);
+    
+    mOverlayLabel.frame = CGRectMake(15, self.view.frame.size.height / 2 + image.size.height / 2 - mOverlayLabel.frame.size.height, 290, mOverlayLabel.frame.size.height);
+    
+//    mOverlayLabel.frame = CGRectMake(15, self.view.frame.size.height / 2 + image.size.height / 5, mOverlayLabel.frame.size.width, mOverlayLabel.frame.size.height);
 }
 
 - (void)setRandomQuote {

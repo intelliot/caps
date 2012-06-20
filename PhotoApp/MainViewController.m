@@ -92,8 +92,8 @@
     RenderViewController *renderVc = [[RenderViewController alloc] initWithNibName:@"RenderViewController" bundle:nil];
     
     [picker presentModalViewController:renderVc animated:YES];
-    [renderVc setBackImage:capturedImage];
     [renderVc setRandomQuote];
+    [renderVc setBackImage:capturedImage];
     //    imgCigarView.image = capturedImage;
 
 }
