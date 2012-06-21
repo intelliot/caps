@@ -81,13 +81,22 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+#define kSaveToLibrary @"Save to Library"
+#define kTweet @"Tweet"
+#define kMail @"Mail"
+
 - (IBAction)shareButtonClicked:(id)sender
 {
-    UIActionSheet *action = [[UIActionSheet alloc]initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Save to Library", @"Tweet", @"Mail", nil];//@"Clear Message Log" == 0 
-    //    action.tag = 99;
+    UIActionSheet *action;
+    
+    if (NSClassFromString(@"TWTweetComposeViewController") == nil) {
+        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kMail, nil];
+    } else {
+        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kTweet, kMail, nil];
+    }
+    
     [action showInView:self.view];
     [action release];
-
 }
 
 #pragma mark User definitive function
@@ -128,7 +137,7 @@
     
     NSInteger nCount = [appDelegate.mQuoteArray count];
     
-    NSInteger randIndex = random() % nCount;
+    NSInteger randIndex = arc4random() % nCount;
     
     NSString *quote = [appDelegate.mQuoteArray objectAtIndex:randIndex];
     
@@ -181,6 +190,12 @@
     
     UIImage *image = [self getShareImage];
     MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+    
+    if( picker == nil )
+    {
+        // No Mail Accounts
+        return;
+    }
     
     picker.mailComposeDelegate = self;
     
@@ -243,29 +258,28 @@
 
 #pragma mark UIActionSheet Delegate
 
--(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *button = [actionSheet buttonTitleAtIndex:buttonIndex];
     
-
-    if( buttonIndex == 0) {
+    if ([button isEqualToString:kSaveToLibrary]) {
         
         UIImage * image = [self getShareImage];
         
         [PhotoAppAppDelegate showWaitingView:@""];
-
+        
         UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
         
+    } else if ([button isEqualToString:kTweet]) {
         
-    } else if( buttonIndex == 1 ) {
-
         [self shareViaTwitter];
         
-    } else if ( buttonIndex == 2 ) {
+    } else if ([button isEqualToString:kMail]) {
         
         [self shareViaEmail];
-
+        
     }
-
-    [actionSheet dismissWithClickedButtonIndex:2 animated:YES]; 
+    
+    [actionSheet dismissWithClickedButtonIndex:[actionSheet cancelButtonIndex] animated:YES];
 }
 
 #pragma mark MFMailComposeView Delegate
