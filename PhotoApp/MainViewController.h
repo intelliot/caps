@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface MainViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, ADBannerViewDelegate>
+
+@property BOOL bannerIsVisible;
 
 - (IBAction)chooseButtonClicked:(id)sender;
 - (IBAction)cameraButtonClicked:(id)sender;

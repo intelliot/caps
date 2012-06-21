@@ -12,11 +12,24 @@
 
 @implementation MainViewController
 
+@synthesize bannerIsVisible;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        if (NSClassFromString(@"ADBannerView")) {
+            ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, 320, 50)];
+            self.bannerIsVisible = NO;
+            adView.delegate = self;
+            adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+            [self.view addSubview:adView];
+            LOG_EVENT(@"iAd");
+        } else{
+            LOG_EVENT(@"No iAd");
+        }
     }
     return self;
 }
@@ -35,6 +48,44 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
+{
+    BOOL shouldExecuteAction = YES; //[self allowActionToRun]; // your application implements this method
+    if (!willLeave && shouldExecuteAction)
+    {
+        // insert code here to suspend any services that might conflict with the advertisement
+    }
+    return shouldExecuteAction;
+}
+
+- (void)bannerViewActionDidFinish:(ADBannerView *)banner {
+    
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    if (!self.bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        // Assumes the banner view is just off the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+        [UIView commitAnimations];
+        self.bannerIsVisible = YES;
+    }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    if (self.bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        // Assumes the banner view is placed at the bottom of the screen.
+        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+        [UIView commitAnimations];
+        self.bannerIsVisible = NO;
+    }
 }
 
 - (void)viewDidUnload

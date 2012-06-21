@@ -28,6 +28,7 @@
 		61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
 		A95796971592F1C0006B6229 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A95796951592F1C0006B6229 /* Default.png */; };
 		A95796981592F1C0006B6229 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A95796961592F1C0006B6229 /* Default@2x.png */; };
+		A957969A15930257006B6229 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957969915930257006B6229 /* iAd.framework */; };
 		A960445C159059F700228B8A /* CleanCapsMenuBackground.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960445B159059F700228B8A /* CleanCapsMenuBackground.fw.png */; };
 		A960446615906F2A00228B8A /* CameraButton.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446215906F2A00228B8A /* CameraButton.fw.png */; };
 		A960446715906F2A00228B8A /* CameraButton.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446315906F2A00228B8A /* CameraButton.fw@2x.png */; };
@@ -69,6 +70,7 @@
 		61D8EAEC15615F680009FD3B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		A95796951592F1C0006B6229 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		A95796961592F1C0006B6229 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		A957969915930257006B6229 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		A960445B159059F700228B8A /* CleanCapsMenuBackground.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CleanCapsMenuBackground.fw.png; path = Resources/CleanCapsMenuBackground.fw.png; sourceTree = "<group>"; };
 		A960446215906F2A00228B8A /* CameraButton.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CameraButton.fw.png; path = Resources/CameraButton.fw.png; sourceTree = "<group>"; };
 		A960446315906F2A00228B8A /* CameraButton.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CameraButton.fw@2x.png"; path = "Resources/CameraButton.fw@2x.png"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A957969A15930257006B6229 /* iAd.framework in Frameworks */,
 				618A2F4815623C410069780D /* Twitter.framework in Frameworks */,
 				61CA8AA215620EFB00E47BD5 /* Security.framework in Frameworks */,
 				61CA8AA015620EEF00E47BD5 /* SystemConfiguration.framework in Frameworks */,
@@ -105,6 +108,7 @@
 		613CA3291561501800946A9C = {
 			isa = PBXGroup;
 			children = (
+				A957969915930257006B6229 /* iAd.framework */,
 				61CA8A9B15620EE200E47BD5 /* bundle1.o */,
 				613CA33E1561501900946A9C /* PhotoApp */,
 				613CA3371561501900946A9C /* Frameworks */,
