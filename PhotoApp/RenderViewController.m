@@ -44,7 +44,11 @@
     [tapGesture setNumberOfTapsRequired:1];
     [tapGesture setDelegate:self];
     [mBackImageView addGestureRecognizer:tapGesture];
-    // Do any additional setup after loading the view from its nib.
+    
+    mOverlayLabel.layer.shadowOffset = CGSizeMake(1, 1);
+    mOverlayLabel.layer.shadowRadius = 2;
+    mOverlayLabel.layer.shadowOpacity = 1;
+    mOverlayLabel.layer.masksToBounds = NO;
 }
 
 - (void)viewDidUnload
