@@ -29,7 +29,8 @@
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]] autorelease];
+    self.window.clipsToBounds = NO;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
@@ -41,6 +42,7 @@
     self.mWaitingViewController = [[WaitingViewController alloc] initWithNibName:@"WaitingViewController" bundle:nil];
     
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
