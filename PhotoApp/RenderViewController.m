@@ -58,6 +58,12 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)dealloc
+{
+    [mBackImageView release];
+    [super dealloc];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations

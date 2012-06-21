@@ -166,7 +166,8 @@
             [renderVc setBackImage:capturedImage :NO];
         }
     }
-
+    
+    [renderVc release];
     
 
     //    imgCigarView.image = capturedImage;
