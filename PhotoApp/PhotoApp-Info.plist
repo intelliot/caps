@@ -14,7 +14,7 @@
 		<string>CleanCapsIcon.fw.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.yourapp</string>
+	<string>com.tinyterabyte.cleancaps</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
