@@ -34,6 +34,34 @@
 		A960446B15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446A15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png */; };
 		A960446E15906F9A00228B8A /* CleanCapsIcon.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */; };
 		A960446F15906F9A00228B8A /* CleanCapsIcon.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */; };
+		A9CE3B641592E3A200AFF8E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3441561501900946A9C /* main.m */; };
+		A9CE3B651592E3A200AFF8E7 /* PhotoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* PhotoAppAppDelegate.m */; };
+		A9CE3B661592E3A200AFF8E7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EADD156151890009FD3B /* MainViewController.m */; };
+		A9CE3B671592E3A200AFF8E7 /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EAE6156154B10009FD3B /* RenderViewController.m */; };
+		A9CE3B681592E3A200AFF8E7 /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A2F5615624E900069780D /* WaitingViewController.m */; };
+		A9CE3B6A1592E3A200AFF8E7 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A2F4715623C410069780D /* Twitter.framework */; };
+		A9CE3B6B1592E3A200AFF8E7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8AA115620EFB00E47BD5 /* Security.framework */; };
+		A9CE3B6C1592E3A200AFF8E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */; };
+		A9CE3B6D1592E3A200AFF8E7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */; };
+		A9CE3B6E1592E3A200AFF8E7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9815620EC800E47BD5 /* MessageUI.framework */; };
+		A9CE3B6F1592E3A200AFF8E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA3381561501900946A9C /* UIKit.framework */; };
+		A9CE3B701592E3A200AFF8E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA33A1561501900946A9C /* Foundation.framework */; };
+		A9CE3B711592E3A200AFF8E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA33C1561501900946A9C /* CoreGraphics.framework */; };
+		A9CE3B721592E3A200AFF8E7 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
+		A9CE3B741592E3A200AFF8E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613CA3411561501900946A9C /* InfoPlist.strings */; };
+		A9CE3B771592E3A200AFF8E7 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
+		A9CE3B791592E3A200AFF8E7 /* quote.txt in Resources */ = {isa = PBXBuildFile; fileRef = 618B3276156480F100C50605 /* quote.txt */; };
+		A9CE3B7A1592E3A200AFF8E7 /* CleanCapsMenuBackground.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960445B159059F700228B8A /* CleanCapsMenuBackground.fw.png */; };
+		A9CE3B7B1592E3A200AFF8E7 /* CameraButton.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446215906F2A00228B8A /* CameraButton.fw.png */; };
+		A9CE3B7C1592E3A200AFF8E7 /* CameraButton.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446315906F2A00228B8A /* CameraButton.fw@2x.png */; };
+		A9CE3B7D1592E3A200AFF8E7 /* ChooseButton.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446415906F2A00228B8A /* ChooseButton.fw.png */; };
+		A9CE3B7E1592E3A200AFF8E7 /* ChooseButton.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446515906F2A00228B8A /* ChooseButton.fw@2x.png */; };
+		A9CE3B7F1592E3A200AFF8E7 /* CleanCapsMenuBackground.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446A15906F7900228B8A /* CleanCapsMenuBackground.fw@2x.png */; };
+		A9CE3B801592E3A200AFF8E7 /* CleanCapsIcon.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */; };
+		A9CE3B811592E3A200AFF8E7 /* CleanCapsIcon.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */; };
+		A9CE3B8C1592E3A200AFF8E7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE3B891592E3A200AFF8E7 /* MainViewController.xib */; };
+		A9CE3B8D1592E3A200AFF8E7 /* RenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE3B8A1592E3A200AFF8E7 /* RenderViewController.xib */; };
+		A9CE3B8E1592E3A200AFF8E7 /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CE3B8B1592E3A200AFF8E7 /* WaitingViewController.xib */; };
 		A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +102,11 @@
 		A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CleanCapsIcon.fw.png; path = Resources/CleanCapsIcon.fw.png; sourceTree = "<group>"; };
 		A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CleanCapsIcon.fw@2x.png"; path = "Resources/CleanCapsIcon.fw@2x.png"; sourceTree = "<group>"; };
 		A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+Extensions.h"; sourceTree = "<group>"; };
+		A9CE3B851592E3A200AFF8E7 /* PhotoApp-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PhotoApp-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CE3B881592E3A200AFF8E7 /* PhotoApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PhotoApp copy-Info.plist"; path = "/Users/eml/Downloads/PhotoApp/PhotoApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		A9CE3B891592E3A200AFF8E7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = "Resources-iPad/PhotoApp/MainViewController.xib"; sourceTree = "<group>"; };
+		A9CE3B8A1592E3A200AFF8E7 /* RenderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RenderViewController.xib; path = "Resources-iPad/PhotoApp/RenderViewController.xib"; sourceTree = "<group>"; };
+		A9CE3B8B1592E3A200AFF8E7 /* WaitingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WaitingViewController.xib; path = "Resources-iPad/PhotoApp/WaitingViewController.xib"; sourceTree = "<group>"; };
 		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		A9D5B105159161730067F6EC /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,16 +128,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9CE3B691592E3A200AFF8E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE3B6A1592E3A200AFF8E7 /* Twitter.framework in Frameworks */,
+				A9CE3B6B1592E3A200AFF8E7 /* Security.framework in Frameworks */,
+				A9CE3B6C1592E3A200AFF8E7 /* SystemConfiguration.framework in Frameworks */,
+				A9CE3B6D1592E3A200AFF8E7 /* AVFoundation.framework in Frameworks */,
+				A9CE3B6E1592E3A200AFF8E7 /* MessageUI.framework in Frameworks */,
+				A9CE3B6F1592E3A200AFF8E7 /* UIKit.framework in Frameworks */,
+				A9CE3B701592E3A200AFF8E7 /* Foundation.framework in Frameworks */,
+				A9CE3B711592E3A200AFF8E7 /* CoreGraphics.framework in Frameworks */,
+				A9CE3B721592E3A200AFF8E7 /* libFlurryAnalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		613CA3291561501800946A9C = {
 			isa = PBXGroup;
 			children = (
+				A9CE3B871592E3A200AFF8E7 /* Resources-iPad */,
 				61CA8A9B15620EE200E47BD5 /* bundle1.o */,
 				613CA33E1561501900946A9C /* PhotoApp */,
 				613CA3371561501900946A9C /* Frameworks */,
 				613CA3351561501900946A9C /* Products */,
+				A9CE3B881592E3A200AFF8E7 /* PhotoApp copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				613CA3341561501900946A9C /* PhotoApp.app */,
+				A9CE3B851592E3A200AFF8E7 /* PhotoApp-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,6 +241,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		A9CE3B871592E3A200AFF8E7 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				A9CE3B891592E3A200AFF8E7 /* MainViewController.xib */,
+				A9CE3B8A1592E3A200AFF8E7 /* RenderViewController.xib */,
+				A9CE3B8B1592E3A200AFF8E7 /* WaitingViewController.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
 		A9D5B102159161730067F6EC /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +288,23 @@
 			productReference = 613CA3341561501900946A9C /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A9CE3B621592E3A200AFF8E7 /* PhotoApp-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9CE3B821592E3A200AFF8E7 /* Build configuration list for PBXNativeTarget "PhotoApp-iPad" */;
+			buildPhases = (
+				A9CE3B631592E3A200AFF8E7 /* Sources */,
+				A9CE3B691592E3A200AFF8E7 /* Frameworks */,
+				A9CE3B731592E3A200AFF8E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PhotoApp-iPad";
+			productName = PhotoApp;
+			productReference = A9CE3B851592E3A200AFF8E7 /* PhotoApp-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +326,7 @@
 			projectRoot = "";
 			targets = (
 				613CA3331561501900946A9C /* PhotoApp */,
+				A9CE3B621592E3A200AFF8E7 /* PhotoApp-iPad */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +353,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9CE3B731592E3A200AFF8E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE3B741592E3A200AFF8E7 /* InfoPlist.strings in Resources */,
+				A9CE3B771592E3A200AFF8E7 /* Entitlements.plist in Resources */,
+				A9CE3B791592E3A200AFF8E7 /* quote.txt in Resources */,
+				A9CE3B7A1592E3A200AFF8E7 /* CleanCapsMenuBackground.fw.png in Resources */,
+				A9CE3B7B1592E3A200AFF8E7 /* CameraButton.fw.png in Resources */,
+				A9CE3B7C1592E3A200AFF8E7 /* CameraButton.fw@2x.png in Resources */,
+				A9CE3B7D1592E3A200AFF8E7 /* ChooseButton.fw.png in Resources */,
+				A9CE3B7E1592E3A200AFF8E7 /* ChooseButton.fw@2x.png in Resources */,
+				A9CE3B7F1592E3A200AFF8E7 /* CleanCapsMenuBackground.fw@2x.png in Resources */,
+				A9CE3B801592E3A200AFF8E7 /* CleanCapsIcon.fw.png in Resources */,
+				A9CE3B811592E3A200AFF8E7 /* CleanCapsIcon.fw@2x.png in Resources */,
+				A9CE3B8C1592E3A200AFF8E7 /* MainViewController.xib in Resources */,
+				A9CE3B8D1592E3A200AFF8E7 /* RenderViewController.xib in Resources */,
+				A9CE3B8E1592E3A200AFF8E7 /* WaitingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -285,6 +386,18 @@
 				61D8EADF156151890009FD3B /* MainViewController.m in Sources */,
 				61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */,
 				618A2F5815624E910069780D /* WaitingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9CE3B631592E3A200AFF8E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CE3B641592E3A200AFF8E7 /* main.m in Sources */,
+				A9CE3B651592E3A200AFF8E7 /* PhotoAppAppDelegate.m in Sources */,
+				A9CE3B661592E3A200AFF8E7 /* MainViewController.m in Sources */,
+				A9CE3B671592E3A200AFF8E7 /* RenderViewController.m in Sources */,
+				A9CE3B681592E3A200AFF8E7 /* WaitingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +420,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -321,6 +435,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -330,6 +445,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -338,6 +454,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -355,6 +472,7 @@
 					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -371,6 +489,41 @@
 					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9CE3B831592E3A200AFF8E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				INFOPLIST_FILE = "PhotoApp copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "PhotoApp-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9CE3B841592E3A200AFF8E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				INFOPLIST_FILE = "PhotoApp copy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
+				PRODUCT_NAME = "PhotoApp-iPad";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -392,6 +545,15 @@
 			buildConfigurations = (
 				613CA34D1561501900946A9C /* Debug */,
 				613CA34E1561501900946A9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9CE3B821592E3A200AFF8E7 /* Build configuration list for PBXNativeTarget "PhotoApp-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9CE3B831592E3A200AFF8E7 /* Debug */,
+				A9CE3B841592E3A200AFF8E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
