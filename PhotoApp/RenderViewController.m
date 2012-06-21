@@ -8,7 +8,7 @@
 
 #import "RenderViewController.h"
 #import "PhotoAppAppDelegate.h"
-
+#import "FlurryAPI+Extensions.h"
 
 @implementation RenderViewController
 
@@ -273,17 +273,20 @@
         
         UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
         
+        LOG_EVENT(@"SaveToLibrary");
+        
     } else if ([button isEqualToString:kTweet]) {
         
         [self shareViaTwitter];
+        
+        LOG_EVENT(@"Tweet");
         
     } else if ([button isEqualToString:kMail]) {
         
         [self shareViaEmail];
         
+        LOG_EVENT(@"Mail");
     }
-    
-    [actionSheet dismissWithClickedButtonIndex:[actionSheet cancelButtonIndex] animated:YES];
 }
 
 #pragma mark MFMailComposeView Delegate
