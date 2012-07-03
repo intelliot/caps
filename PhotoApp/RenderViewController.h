@@ -22,7 +22,10 @@
 }
 
 - (IBAction)backButtonClicked:(id)sender;
-- (IBAction)shareButtonClicked:(id)sender;
+//- (IBAction)shareButtonClicked:(id)sender;
+- (IBAction)saveTapped:(id)sender;
+- (IBAction)tweetTapped:(id)sender;
+- (IBAction)mailTapped:(id)sender;
 
 - (void)setBackImage : (UIImage *) image : (BOOL) overed;
 - (void)setRandomQuote;

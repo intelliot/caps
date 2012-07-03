@@ -17,4 +17,4 @@
 
 #define LOG_EVENT(x) ([FlurryAnalytics logEvent:x])
 
-#define LOG_EVENT_PARAMS(x, y) ([FlurryAPI logEvent:x withParameters:y])
+#define LOG_EVENT_PARAMS(x, y) ([FlurryAnalytics logEvent:x withParameters:y])

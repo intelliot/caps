@@ -95,18 +95,52 @@
 #define kTweet @"Tweet"
 #define kMail @"Mail"
 
-- (IBAction)shareButtonClicked:(id)sender
+//- (IBAction)shareButtonClicked:(id)sender
+//{
+//    UIActionSheet *action;
+//    
+//    if (NSClassFromString(@"TWTweetComposeViewController") == nil) {
+//        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kMail, nil];
+//    } else {
+//        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kTweet, kMail, nil];
+//    }
+//    
+//    [action showInView:self.view];
+//    [action release];
+//}
+
+- (IBAction)saveTapped:(id)sender
 {
-    UIActionSheet *action;
+    UIImage * image = [self getShareImage];
+    [PhotoAppAppDelegate showWaitingView:@""];
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
-    if (NSClassFromString(@"TWTweetComposeViewController") == nil) {
-        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kMail, nil];
-    } else {
-        action = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:kSaveToLibrary, kTweet, kMail, nil];
+    NSDictionary *quoteParameters = [NSDictionary dictionaryWithObjectsAndKeys:mOverlayLabel.text, @"Quote", nil];
+    LOG_EVENT_PARAMS(@"SaveToLibrary", quoteParameters);
+}
+
+- (IBAction)tweetTapped:(id)sender {
+    if (NSClassFromString(@"TWTweetComposeViewController") == nil)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Not Supported" message:@"Tweet requires iOS 5 or higher" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [alert release];
     }
+    else
+    {
+        [self shareViaTwitter];
+        
+        NSDictionary *quoteParameters = [NSDictionary dictionaryWithObjectsAndKeys:mOverlayLabel.text, @"Quote", nil];
+        LOG_EVENT_PARAMS(@"Tweet", quoteParameters);
+    }
+}
+
+- (IBAction)mailTapped:(id)sender
+{
+    [self shareViaEmail];
     
-    [action showInView:self.view];
-    [action release];
+    NSDictionary *quoteParameters = [NSDictionary dictionaryWithObjectsAndKeys:mOverlayLabel.text, @"Quote", nil];
+    LOG_EVENT_PARAMS(@"Mail", quoteParameters);
 }
 
 #pragma mark User definitive function
@@ -260,40 +294,43 @@
     
 }
 
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo: (void *) contextInfo {
-    
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo: (void *) contextInfo
+{
     [PhotoAppAppDelegate hideWaitingView];
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Saved to Library" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
 }
 
-#pragma mark UIActionSheet Delegate
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    NSString *button = [actionSheet buttonTitleAtIndex:buttonIndex];
-    
-    if ([button isEqualToString:kSaveToLibrary]) {
-        
-        UIImage * image = [self getShareImage];
-        
-        [PhotoAppAppDelegate showWaitingView:@""];
-        
-        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-        
-        LOG_EVENT(@"SaveToLibrary");
-        
-    } else if ([button isEqualToString:kTweet]) {
-        
-        [self shareViaTwitter];
-        
-        LOG_EVENT(@"Tweet");
-        
-    } else if ([button isEqualToString:kMail]) {
-        
-        [self shareViaEmail];
-        
-        LOG_EVENT(@"Mail");
-    }
-}
+//#pragma mark UIActionSheet Delegate
+//
+//- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+//    NSString *button = [actionSheet buttonTitleAtIndex:buttonIndex];
+//    
+//    if ([button isEqualToString:kSaveToLibrary]) {
+//        
+//        UIImage * image = [self getShareImage];
+//        
+//        [PhotoAppAppDelegate showWaitingView:@""];
+//        
+//        UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+//        
+//        LOG_EVENT(@"SaveToLibrary");
+//        
+//    } else if ([button isEqualToString:kTweet]) {
+//        
+//        [self shareViaTwitter];
+//        
+//        LOG_EVENT(@"Tweet");
+//        
+//    } else if ([button isEqualToString:kMail]) {
+//        
+//        [self shareViaEmail];
+//        
+//        LOG_EVENT(@"Mail");
+//    }
+//}
 
 #pragma mark MFMailComposeView Delegate
 

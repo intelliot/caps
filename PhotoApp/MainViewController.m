@@ -134,8 +134,7 @@
     }
     else {
         
-        UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"Camera Unavailable" message:@"Your device must have a camera to use this function." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Camera Unavailable" message:@"Your device must have a camera to use this function." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         [alert release];
         
