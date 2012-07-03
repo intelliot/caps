@@ -243,8 +243,8 @@
     
     picker.mailComposeDelegate = self;
     
-    [picker setSubject:[NSString stringWithFormat:@""]];
-	[picker setMessageBody:@"" isHTML:YES];
+    [picker setSubject:@"Random Caption :)"];
+	[picker setMessageBody:@"<a href=\"http://bit.ly/uvnosab\">Clean Caps</a> put a random caption on this photo!" isHTML:YES];
     
     NSData *myData = UIImageJPEGRepresentation(image, 1.0);
     
@@ -266,7 +266,7 @@
     
     [twitter addImage:tempImage];
     
-    [twitter addURL:[NSURL URLWithString:@""]];
+    [twitter addURL:[NSURL URLWithString:@"http://bit.ly/uvnosab"]];
     
     [self presentViewController:twitter animated:YES completion:nil];
     
