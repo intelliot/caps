@@ -10,6 +10,12 @@
 #import "MainViewController.h"
 #import "FlurryAnalytics.h"
 
+#if PRO
+    #define quoteFile (@"quotePro")
+#else
+    #define quoteFile (@"quote")
+#endif
+
 #define checkIntervalSeconds (60*60*12)
 
 @implementation AppDelegate
@@ -96,7 +102,7 @@
 - (void)getQueryList
 {   
     
-    NSString *filepath = [[NSBundle mainBundle] pathForResource:@"quote" ofType:@"txt"];
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:quoteFile ofType:@"txt"];
     NSString *quoteStr = [NSString stringWithContentsOfFile:filepath encoding:NSUTF8StringEncoding error:nil];
 
     self.mQuoteArray = (NSMutableArray *) [quoteStr componentsSeparatedByString:@"\n"];

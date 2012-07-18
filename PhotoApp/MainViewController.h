@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <iAd/iAd.h>
+#ifndef PRO
+    #import <iAd/iAd.h>
+#endif
 
-@interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, ADBannerViewDelegate>
+@interface MainViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate
+#ifndef PRO
+    , ADBannerViewDelegate
+#endif
+>
 
 @property BOOL bannerIsVisible;
 

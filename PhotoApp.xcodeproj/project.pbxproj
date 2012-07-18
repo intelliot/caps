@@ -28,6 +28,42 @@
 		61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
 		A951FD2315B6B683004DA7BB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2115B6B683004DA7BB /* Icon.png */; };
 		A951FD2415B6B683004DA7BB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2215B6B683004DA7BB /* Icon@2x.png */; };
+		A951FD3015B6B8BD004DA7BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3441561501900946A9C /* main.m */; };
+		A951FD3115B6B8BD004DA7BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* AppDelegate.m */; };
+		A951FD3215B6B8BD004DA7BB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EADD156151890009FD3B /* MainViewController.m */; };
+		A951FD3315B6B8BD004DA7BB /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EAE6156154B10009FD3B /* RenderViewController.m */; };
+		A951FD3415B6B8BD004DA7BB /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A2F5615624E900069780D /* WaitingViewController.m */; };
+		A951FD3615B6B8BD004DA7BB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957969915930257006B6229 /* iAd.framework */; };
+		A951FD3715B6B8BD004DA7BB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A2F4715623C410069780D /* Twitter.framework */; };
+		A951FD3815B6B8BD004DA7BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8AA115620EFB00E47BD5 /* Security.framework */; };
+		A951FD3915B6B8BD004DA7BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9F15620EEF00E47BD5 /* SystemConfiguration.framework */; };
+		A951FD3A15B6B8BD004DA7BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9D15620EE800E47BD5 /* AVFoundation.framework */; };
+		A951FD3B15B6B8BD004DA7BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61CA8A9815620EC800E47BD5 /* MessageUI.framework */; };
+		A951FD3C15B6B8BD004DA7BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA3381561501900946A9C /* UIKit.framework */; };
+		A951FD3D15B6B8BD004DA7BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA33A1561501900946A9C /* Foundation.framework */; };
+		A951FD3E15B6B8BD004DA7BB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA33C1561501900946A9C /* CoreGraphics.framework */; };
+		A951FD3F15B6B8BD004DA7BB /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
+		A951FD4115B6B8BD004DA7BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613CA3411561501900946A9C /* InfoPlist.strings */; };
+		A951FD4215B6B8BD004DA7BB /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EADE156151890009FD3B /* MainViewController.xib */; };
+		A951FD4315B6B8BD004DA7BB /* RenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAE7156154B10009FD3B /* RenderViewController.xib */; };
+		A951FD4415B6B8BD004DA7BB /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
+		A951FD4515B6B8BD004DA7BB /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F5715624E900069780D /* WaitingViewController.xib */; };
+		A951FD4715B6B8BD004DA7BB /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3AD15AC6CC60028448A /* Background.png */; };
+		A951FD4815B6B8BD004DA7BB /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3AE15AC6CC60028448A /* Background@2x.png */; };
+		A951FD4915B6B8BD004DA7BB /* camera-clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3AF15AC6CC60028448A /* camera-clicked.png */; };
+		A951FD4A15B6B8BD004DA7BB /* camera-clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B015AC6CC60028448A /* camera-clicked@2x.png */; };
+		A951FD4B15B6B8BD004DA7BB /* camera-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B115AC6CC60028448A /* camera-normal.png */; };
+		A951FD4C15B6B8BD004DA7BB /* camera-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B215AC6CC60028448A /* camera-normal@2x.png */; };
+		A951FD4D15B6B8BD004DA7BB /* choose-clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3BF15AC6E680028448A /* choose-clicked.png */; };
+		A951FD4E15B6B8BD004DA7BB /* choose-clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3C015AC6E680028448A /* choose-clicked@2x.png */; };
+		A951FD4F15B6B8BD004DA7BB /* choose-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3C115AC6E680028448A /* choose-normal.png */; };
+		A951FD5015B6B8BD004DA7BB /* choose-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3C215AC6E680028448A /* choose-normal@2x.png */; };
+		A951FD5115B6B8BD004DA7BB /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3D515AC80090028448A /* iTunesArtwork.png */; };
+		A951FD5215B6B8BD004DA7BB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74B63615B10B0F003C4108 /* Default.png */; };
+		A951FD5315B6B8BD004DA7BB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE74B63715B10B0F003C4108 /* Default@2x.png */; };
+		A951FD5415B6B8BD004DA7BB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2115B6B683004DA7BB /* Icon.png */; };
+		A951FD5515B6B8BD004DA7BB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2215B6B683004DA7BB /* Icon@2x.png */; };
+		A951FD5E15B6BAED004DA7BB /* quotePro.txt in Resources */ = {isa = PBXBuildFile; fileRef = A951FD5D15B6BAED004DA7BB /* quotePro.txt */; };
 		A957969A15930257006B6229 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957969915930257006B6229 /* iAd.framework */; };
 		A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
 		CE0FA3B615AC6CC60028448A /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3AD15AC6CC60028448A /* Background.png */; };
@@ -46,11 +82,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		613CA3341561501900946A9C /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		613CA3341561501900946A9C /* Clean Caps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean Caps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		613CA3381561501900946A9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		613CA33A1561501900946A9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		613CA33C1561501900946A9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		613CA3401561501900946A9C /* PhotoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoApp-Info.plist"; sourceTree = "<group>"; };
+		613CA3401561501900946A9C /* Free-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Free-Info.plist"; sourceTree = "<group>"; };
 		613CA3421561501900946A9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		613CA3441561501900946A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		613CA3461561501900946A9C /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
@@ -75,6 +111,9 @@
 		61D8EAEC15615F680009FD3B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		A951FD2115B6B683004DA7BB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
 		A951FD2215B6B683004DA7BB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
+		A951FD5A15B6B8BD004DA7BB /* CleanCapsPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanCapsPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A951FD5C15B6B8BE004DA7BB /* Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Pro-Info.plist"; path = "/Volumes/Mountain Lion/Users/eml/Projects/caps/Pro-Info.plist"; sourceTree = "<absolute>"; };
+		A951FD5D15B6BAED004DA7BB /* quotePro.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quotePro.txt; sourceTree = "<group>"; };
 		A957969915930257006B6229 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+Extensions.h"; sourceTree = "<group>"; };
 		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
@@ -112,6 +151,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A951FD3515B6B8BD004DA7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A951FD3615B6B8BD004DA7BB /* iAd.framework in Frameworks */,
+				A951FD3715B6B8BD004DA7BB /* Twitter.framework in Frameworks */,
+				A951FD3815B6B8BD004DA7BB /* Security.framework in Frameworks */,
+				A951FD3915B6B8BD004DA7BB /* SystemConfiguration.framework in Frameworks */,
+				A951FD3A15B6B8BD004DA7BB /* AVFoundation.framework in Frameworks */,
+				A951FD3B15B6B8BD004DA7BB /* MessageUI.framework in Frameworks */,
+				A951FD3C15B6B8BD004DA7BB /* UIKit.framework in Frameworks */,
+				A951FD3D15B6B8BD004DA7BB /* Foundation.framework in Frameworks */,
+				A951FD3E15B6B8BD004DA7BB /* CoreGraphics.framework in Frameworks */,
+				A951FD3F15B6B8BD004DA7BB /* libFlurryAnalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -129,7 +185,8 @@
 		613CA3351561501900946A9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				613CA3341561501900946A9C /* PhotoApp.app */,
+				613CA3341561501900946A9C /* Clean Caps.app */,
+				A951FD5A15B6B8BD004DA7BB /* CleanCapsPro.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,8 +224,10 @@
 			isa = PBXGroup;
 			children = (
 				618B3276156480F100C50605 /* quote.txt */,
+				A951FD5D15B6BAED004DA7BB /* quotePro.txt */,
 				61D8EAEC15615F680009FD3B /* Entitlements.plist */,
-				613CA3401561501900946A9C /* PhotoApp-Info.plist */,
+				613CA3401561501900946A9C /* Free-Info.plist */,
+				A951FD5C15B6B8BE004DA7BB /* Pro-Info.plist */,
 				613CA3411561501900946A9C /* InfoPlist.strings */,
 				613CA3441561501900946A9C /* main.m */,
 				613CA3461561501900946A9C /* PhotoApp-Prefix.pch */,
@@ -234,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		613CA3331561501900946A9C /* PhotoApp */ = {
+		613CA3331561501900946A9C /* Clean Caps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 613CA34C1561501900946A9C /* Build configuration list for PBXNativeTarget "PhotoApp" */;
+			buildConfigurationList = 613CA34C1561501900946A9C /* Build configuration list for PBXNativeTarget "Clean Caps" */;
 			buildPhases = (
 				613CA3301561501900946A9C /* Sources */,
 				613CA3311561501900946A9C /* Frameworks */,
@@ -246,9 +305,26 @@
 			);
 			dependencies = (
 			);
-			name = PhotoApp;
+			name = "Clean Caps";
 			productName = PhotoApp;
-			productReference = 613CA3341561501900946A9C /* PhotoApp.app */;
+			productReference = 613CA3341561501900946A9C /* Clean Caps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A951FD2E15B6B8BD004DA7BB /* Clean Caps Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A951FD5615B6B8BD004DA7BB /* Build configuration list for PBXNativeTarget "Clean Caps Pro" */;
+			buildPhases = (
+				A951FD2F15B6B8BD004DA7BB /* Sources */,
+				A951FD3515B6B8BD004DA7BB /* Frameworks */,
+				A951FD4015B6B8BD004DA7BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clean Caps Pro";
+			productName = PhotoApp;
+			productReference = A951FD5A15B6B8BD004DA7BB /* CleanCapsPro.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -271,7 +347,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				613CA3331561501900946A9C /* PhotoApp */,
+				613CA3331561501900946A9C /* Clean Caps */,
+				A951FD2E15B6B8BD004DA7BB /* Clean Caps Pro */,
 			);
 		};
 /* End PBXProject section */
@@ -305,6 +382,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A951FD4015B6B8BD004DA7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A951FD4115B6B8BD004DA7BB /* InfoPlist.strings in Resources */,
+				A951FD4215B6B8BD004DA7BB /* MainViewController.xib in Resources */,
+				A951FD4315B6B8BD004DA7BB /* RenderViewController.xib in Resources */,
+				A951FD4415B6B8BD004DA7BB /* Entitlements.plist in Resources */,
+				A951FD4515B6B8BD004DA7BB /* WaitingViewController.xib in Resources */,
+				A951FD4715B6B8BD004DA7BB /* Background.png in Resources */,
+				A951FD4815B6B8BD004DA7BB /* Background@2x.png in Resources */,
+				A951FD4915B6B8BD004DA7BB /* camera-clicked.png in Resources */,
+				A951FD4A15B6B8BD004DA7BB /* camera-clicked@2x.png in Resources */,
+				A951FD4B15B6B8BD004DA7BB /* camera-normal.png in Resources */,
+				A951FD4C15B6B8BD004DA7BB /* camera-normal@2x.png in Resources */,
+				A951FD4D15B6B8BD004DA7BB /* choose-clicked.png in Resources */,
+				A951FD4E15B6B8BD004DA7BB /* choose-clicked@2x.png in Resources */,
+				A951FD4F15B6B8BD004DA7BB /* choose-normal.png in Resources */,
+				A951FD5015B6B8BD004DA7BB /* choose-normal@2x.png in Resources */,
+				A951FD5115B6B8BD004DA7BB /* iTunesArtwork.png in Resources */,
+				A951FD5215B6B8BD004DA7BB /* Default.png in Resources */,
+				A951FD5315B6B8BD004DA7BB /* Default@2x.png in Resources */,
+				A951FD5415B6B8BD004DA7BB /* Icon.png in Resources */,
+				A951FD5515B6B8BD004DA7BB /* Icon@2x.png in Resources */,
+				A951FD5E15B6BAED004DA7BB /* quotePro.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,6 +422,18 @@
 				61D8EADF156151890009FD3B /* MainViewController.m in Sources */,
 				61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */,
 				618A2F5815624E910069780D /* WaitingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A951FD2F15B6B8BD004DA7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A951FD3015B6B8BD004DA7BB /* main.m in Sources */,
+				A951FD3115B6B8BD004DA7BB /* AppDelegate.m in Sources */,
+				A951FD3215B6B8BD004DA7BB /* MainViewController.m in Sources */,
+				A951FD3315B6B8BD004DA7BB /* RenderViewController.m in Sources */,
+				A951FD3415B6B8BD004DA7BB /* WaitingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				INFOPLIST_FILE = "PhotoApp/Free-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
@@ -411,7 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				INFOPLIST_FILE = "PhotoApp/Free-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
@@ -420,6 +537,66 @@
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
+		};
+		A951FD5715B6B8BD004DA7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Pro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
+				OTHER_CFLAGS = "-DPRO=1";
+				PRODUCT_NAME = CleanCapsPro;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A951FD5815B6B8BD004DA7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Pro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DPRO=1",
+				);
+				PRODUCT_NAME = CleanCapsPro;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A951FD5915B6B8BD004DA7BB /* App Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "Pro-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
+				);
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DPRO=1",
+				);
+				PRODUCT_NAME = CleanCapsPro;
+				WRAPPER_EXTENSION = app;
+			};
+			name = "App Store";
 		};
 		A9EEC41215930FA0005331FF /* App Store */ = {
 			isa = XCBuildConfiguration;
@@ -452,7 +629,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
+				INFOPLIST_FILE = "PhotoApp/Free-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/PhotoApp/Libraries/FlurryAnalytics\"",
@@ -475,12 +652,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		613CA34C1561501900946A9C /* Build configuration list for PBXNativeTarget "PhotoApp" */ = {
+		613CA34C1561501900946A9C /* Build configuration list for PBXNativeTarget "Clean Caps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				613CA34D1561501900946A9C /* Debug */,
 				613CA34E1561501900946A9C /* Release */,
 				A9EEC41315930FA0005331FF /* App Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A951FD5615B6B8BD004DA7BB /* Build configuration list for PBXNativeTarget "Clean Caps Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A951FD5715B6B8BD004DA7BB /* Debug */,
+				A951FD5815B6B8BD004DA7BB /* Release */,
+				A951FD5915B6B8BD004DA7BB /* App Store */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

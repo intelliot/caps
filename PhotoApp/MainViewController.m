@@ -19,7 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
+#ifndef PRO
         if (NSClassFromString(@"ADBannerView")) {
             ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, 320, 50)];
             self.bannerIsVisible = NO;
@@ -30,6 +30,7 @@
         } else{
             LOG_EVENT(@"No iAd");
         }
+#endif
     }
     return self;
 }
@@ -50,6 +51,7 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+#ifndef PRO
 - (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
 {
     BOOL shouldExecuteAction = YES; //[self allowActionToRun]; // your application implements this method
@@ -87,6 +89,7 @@
         self.bannerIsVisible = NO;
     }
 }
+#endif
 
 - (void)viewDidUnload
 {

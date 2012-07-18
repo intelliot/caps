@@ -244,7 +244,14 @@
     picker.mailComposeDelegate = self;
     
     [picker setSubject:@"Random Caption :)"];
+    
+    // http://bit.ly/NVxOIV = ccCleanCaptions
+    // http://bit.ly/uvnosab = ccCleanCaps
+#if PRO
+    [picker setMessageBody:@"<a href=\"http://bit.ly/NVxOIV\">Clean Caps</a> put a random caption on this photo!" isHTML:YES];
+#else
 	[picker setMessageBody:@"<a href=\"http://bit.ly/uvnosab\">Clean Caps</a> put a random caption on this photo!" isHTML:YES];
+#endif
     
     NSData *myData = UIImageJPEGRepresentation(image, 1.0);
     

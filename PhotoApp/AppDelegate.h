@@ -10,7 +10,7 @@
 #import "WaitingViewController.h"
 
 #define DOCUMENTS_PATH  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
-#define QUOTE_FILE_PATH [NSString stringWithFormat:@"%@/quote.plist", DOCUMENTS_PATH]
+//#define QUOTE_FILE_PATH [NSString stringWithFormat:@"%@/quote.plist", DOCUMENTS_PATH]
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
