@@ -10,8 +10,8 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
 	<array>
-		<string>CleanCapsIcon.fw@2x.png</string>
-		<string>CleanCapsIcon.fw.png</string>
+		<string>Icon@2x.png</string>
+		<string>Icon.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.tinyterabyte.cleancaps</string>

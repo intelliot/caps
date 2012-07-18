@@ -26,6 +26,8 @@
 		61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D8EAE6156154B10009FD3B /* RenderViewController.m */; };
 		61D8EAE9156154B10009FD3B /* RenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAE7156154B10009FD3B /* RenderViewController.xib */; };
 		61D8EAED15615F680009FD3B /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D8EAEC15615F680009FD3B /* Entitlements.plist */; };
+		A951FD2315B6B683004DA7BB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2115B6B683004DA7BB /* Icon.png */; };
+		A951FD2415B6B683004DA7BB /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A951FD2215B6B683004DA7BB /* Icon@2x.png */; };
 		A957969A15930257006B6229 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A957969915930257006B6229 /* iAd.framework */; };
 		A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
 		CE0FA3B615AC6CC60028448A /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3AD15AC6CC60028448A /* Background.png */; };
@@ -34,8 +36,6 @@
 		CE0FA3B915AC6CC60028448A /* camera-clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B015AC6CC60028448A /* camera-clicked@2x.png */; };
 		CE0FA3BA15AC6CC60028448A /* camera-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B115AC6CC60028448A /* camera-normal.png */; };
 		CE0FA3BB15AC6CC60028448A /* camera-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B215AC6CC60028448A /* camera-normal@2x.png */; };
-		CE0FA3BD15AC6CC60028448A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B415AC6CC60028448A /* icon.png */; };
-		CE0FA3BE15AC6CC60028448A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3B515AC6CC60028448A /* icon@2x.png */; };
 		CE0FA3C315AC6E680028448A /* choose-clicked.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3BF15AC6E680028448A /* choose-clicked.png */; };
 		CE0FA3C415AC6E680028448A /* choose-clicked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3C015AC6E680028448A /* choose-clicked@2x.png */; };
 		CE0FA3C515AC6E680028448A /* choose-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0FA3C115AC6E680028448A /* choose-normal.png */; };
@@ -54,7 +54,7 @@
 		613CA3421561501900946A9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		613CA3441561501900946A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		613CA3461561501900946A9C /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
-		613CA3471561501900946A9C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		613CA3471561501900946A9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		613CA3481561501900946A9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		618A2F4715623C410069780D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		618A2F5515624E900069780D /* WaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingViewController.h; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		61D8EAE6156154B10009FD3B /* RenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderViewController.m; sourceTree = "<group>"; };
 		61D8EAE7156154B10009FD3B /* RenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RenderViewController.xib; sourceTree = "<group>"; };
 		61D8EAEC15615F680009FD3B /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		A951FD2115B6B683004DA7BB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
+		A951FD2215B6B683004DA7BB /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
 		A957969915930257006B6229 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+Extensions.h"; sourceTree = "<group>"; };
 		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
@@ -83,8 +85,6 @@
 		CE0FA3B015AC6CC60028448A /* camera-clicked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-clicked@2x.png"; path = "Resources/camera-clicked@2x.png"; sourceTree = "<group>"; };
 		CE0FA3B115AC6CC60028448A /* camera-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-normal.png"; path = "Resources/camera-normal.png"; sourceTree = "<group>"; };
 		CE0FA3B215AC6CC60028448A /* camera-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-normal@2x.png"; path = "Resources/camera-normal@2x.png"; sourceTree = "<group>"; };
-		CE0FA3B415AC6CC60028448A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Resources/icon.png; sourceTree = "<group>"; };
-		CE0FA3B515AC6CC60028448A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Resources/icon@2x.png"; sourceTree = "<group>"; };
 		CE0FA3BF15AC6E680028448A /* choose-clicked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "choose-clicked.png"; path = "Resources/choose-clicked.png"; sourceTree = "<group>"; };
 		CE0FA3C015AC6E680028448A /* choose-clicked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "choose-clicked@2x.png"; path = "Resources/choose-clicked@2x.png"; sourceTree = "<group>"; };
 		CE0FA3C115AC6E680028448A /* choose-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "choose-normal.png"; path = "Resources/choose-normal.png"; sourceTree = "<group>"; };
@@ -208,8 +208,8 @@
 				CE0FA3B015AC6CC60028448A /* camera-clicked@2x.png */,
 				CE0FA3B115AC6CC60028448A /* camera-normal.png */,
 				CE0FA3B215AC6CC60028448A /* camera-normal@2x.png */,
-				CE0FA3B415AC6CC60028448A /* icon.png */,
-				CE0FA3B515AC6CC60028448A /* icon@2x.png */,
+				A951FD2115B6B683004DA7BB /* Icon.png */,
+				A951FD2215B6B683004DA7BB /* Icon@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 		613CA32B1561501800946A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 613CA32E1561501800946A9C /* Build configuration list for PBXProject "PhotoApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,8 +293,6 @@
 				CE0FA3B915AC6CC60028448A /* camera-clicked@2x.png in Resources */,
 				CE0FA3BA15AC6CC60028448A /* camera-normal.png in Resources */,
 				CE0FA3BB15AC6CC60028448A /* camera-normal@2x.png in Resources */,
-				CE0FA3BD15AC6CC60028448A /* icon.png in Resources */,
-				CE0FA3BE15AC6CC60028448A /* icon@2x.png in Resources */,
 				CE0FA3C315AC6E680028448A /* choose-clicked.png in Resources */,
 				CE0FA3C415AC6E680028448A /* choose-clicked@2x.png in Resources */,
 				CE0FA3C515AC6E680028448A /* choose-normal.png in Resources */,
@@ -302,6 +300,8 @@
 				CE0FA3D615AC80090028448A /* iTunesArtwork.png in Resources */,
 				CE74B63815B10B0F003C4108 /* Default.png in Resources */,
 				CE74B63915B10B0F003C4108 /* Default@2x.png in Resources */,
+				A951FD2315B6B683004DA7BB /* Icon.png in Resources */,
+				A951FD2415B6B683004DA7BB /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +352,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -373,6 +374,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -391,6 +393,7 @@
 				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +410,7 @@
 				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,6 +432,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Tiny Terabyte Limited";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -446,6 +451,7 @@
 				CODE_SIGN_ENTITLEMENTS = PhotoApp/Entitlements.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoApp/PhotoApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "PhotoApp/PhotoApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
