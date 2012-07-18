@@ -12,7 +12,7 @@
 		613CA33D1561501900946A9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 613CA33C1561501900946A9C /* CoreGraphics.framework */; };
 		613CA3431561501900946A9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613CA3411561501900946A9C /* InfoPlist.strings */; };
 		613CA3451561501900946A9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3441561501900946A9C /* main.m */; };
-		613CA3491561501900946A9C /* PhotoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* PhotoAppAppDelegate.m */; };
+		613CA3491561501900946A9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CA3481561501900946A9C /* AppDelegate.m */; };
 		618A2F4815623C410069780D /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618A2F4715623C410069780D /* Twitter.framework */; };
 		618A2F5815624E910069780D /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A2F5615624E900069780D /* WaitingViewController.m */; };
 		618A2F5915624E910069780D /* WaitingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618A2F5715624E900069780D /* WaitingViewController.xib */; };
@@ -54,8 +54,8 @@
 		613CA3421561501900946A9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		613CA3441561501900946A9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		613CA3461561501900946A9C /* PhotoApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoApp-Prefix.pch"; sourceTree = "<group>"; };
-		613CA3471561501900946A9C /* PhotoAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAppAppDelegate.h; sourceTree = "<group>"; };
-		613CA3481561501900946A9C /* PhotoAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAppAppDelegate.m; sourceTree = "<group>"; };
+		613CA3471561501900946A9C /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		613CA3481561501900946A9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		618A2F4715623C410069780D /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		618A2F5515624E900069780D /* WaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingViewController.h; sourceTree = "<group>"; };
 		618A2F5615624E900069780D /* WaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingViewController.m; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 				A9D5B102159161730067F6EC /* Libraries */,
 				61D8EADB1561516D0009FD3B /* Resources */,
 				61D8EAD9156151670009FD3B /* Classes */,
-				613CA3471561501900946A9C /* PhotoAppAppDelegate.h */,
-				613CA3481561501900946A9C /* PhotoAppAppDelegate.m */,
+				613CA3471561501900946A9C /* AppDelegate.h */,
+				613CA3481561501900946A9C /* AppDelegate.m */,
 				613CA33F1561501900946A9C /* Supporting Files */,
 			);
 			path = PhotoApp;
@@ -313,7 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613CA3451561501900946A9C /* main.m in Sources */,
-				613CA3491561501900946A9C /* PhotoAppAppDelegate.m in Sources */,
+				613CA3491561501900946A9C /* AppDelegate.m in Sources */,
 				61D8EADF156151890009FD3B /* MainViewController.m in Sources */,
 				61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */,
 				618A2F5815624E910069780D /* WaitingViewController.m in Sources */,

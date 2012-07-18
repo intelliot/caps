@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "PhotoAppAppDelegate.h"
+#import "AppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([PhotoAppAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

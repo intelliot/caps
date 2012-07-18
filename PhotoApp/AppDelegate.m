@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "PhotoAppAppDelegate.h"
+#import "AppDelegate.h"
 #import "MainViewController.h"
 #import "FlurryAnalytics.h"
 
-@implementation PhotoAppAppDelegate
+@implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize mQuoteArray;
@@ -113,7 +113,7 @@
 }
 
 + (void) showWaitingView:(NSString *)waiting_label {
-	PhotoAppAppDelegate *appDelegate = (PhotoAppAppDelegate *)[[UIApplication sharedApplication] delegate];	
+	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];	
     
     UIView *parentView = [appDelegate.window.subviews objectAtIndex:0];
     [appDelegate.mWaitingViewController.view setFrame:parentView.bounds];
@@ -124,7 +124,7 @@
 }
 
 + (void) hideWaitingView {
-	PhotoAppAppDelegate *appDelegate = (PhotoAppAppDelegate *)[[UIApplication sharedApplication] delegate];
+	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate hideWaitingView];
 }
 

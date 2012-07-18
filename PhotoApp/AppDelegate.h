@@ -12,7 +12,7 @@
 #define DOCUMENTS_PATH  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 #define QUOTE_FILE_PATH [NSString stringWithFormat:@"%@/quote.plist", DOCUMENTS_PATH]
 
-@interface PhotoAppAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) WaitingViewController *mWaitingViewController;
 @property (strong, nonatomic) UIWindow *window;

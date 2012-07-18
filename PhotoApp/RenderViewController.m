@@ -7,7 +7,7 @@
 //
 
 #import "RenderViewController.h"
-#import "PhotoAppAppDelegate.h"
+#import "AppDelegate.h"
 #import "FlurryAPI+Extensions.h"
 
 @implementation RenderViewController
@@ -112,7 +112,7 @@
 - (IBAction)saveTapped:(id)sender
 {
     UIImage * image = [self getShareImage];
-    [PhotoAppAppDelegate showWaitingView:@""];
+    [AppDelegate showWaitingView:@""];
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     
     NSDictionary *quoteParameters = [NSDictionary dictionaryWithObjectsAndKeys:mOverlayLabel.text, @"Quote", nil];
@@ -177,7 +177,7 @@
 
 - (void)setRandomQuote {
     
-    PhotoAppAppDelegate *appDelegate = (PhotoAppAppDelegate *) [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
     
     NSInteger nCount = [appDelegate.mQuoteArray count];
     
@@ -296,7 +296,7 @@
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo: (void *) contextInfo
 {
-    [PhotoAppAppDelegate hideWaitingView];
+    [AppDelegate hideWaitingView];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Saved to Library" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
