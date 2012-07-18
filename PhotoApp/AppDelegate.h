@@ -17,10 +17,13 @@
 @property (strong, nonatomic) WaitingViewController *mWaitingViewController;
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, retain) NSMutableArray *mQuoteArray;
+@property (nonatomic, copy)   NSString *forcedUpdateURLString;
+@property (nonatomic)         BOOL isValidForcedUpdateContent;
 
+- (void)checkForcedAppUpdate;
 - (void)getQueryList;
-- (void) hideWaitingView;
-+ (void) hideWaitingView;
-+ (void) showWaitingView:(NSString *)waiting_label;
+- (void)hideWaitingView;
++ (void)hideWaitingView;
++ (void)showWaitingView:(NSString *)waiting_label;
 
 @end
