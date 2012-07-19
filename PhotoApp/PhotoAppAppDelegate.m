@@ -9,6 +9,7 @@
 #import "PhotoAppAppDelegate.h"
 #import "MainViewController.h"
 #import "FlurryAnalytics.h"
+#import "OptionalOrForcedUpdate.h"
 
 @implementation PhotoAppAppDelegate
 
@@ -25,6 +26,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [OptionalOrForcedUpdate start];
+    
     [FlurryAnalytics startSession:@"6XN3TBYBZBJSVYJZNH97"];
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;

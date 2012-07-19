@@ -12,3 +12,37 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#ifndef UI_USER_INTERFACE_IDIOM
+typedef enum {
+	UIUserInterfaceIdiomPhone,
+	UIUserInterfaceIdiomPad,
+} UIUserInterfaceIdiom;
+
+#define UI_USER_INTERFACE_IDIOM() \
+([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ? \
+[[UIDevice currentDevice] userInterfaceIdiom] : \
+UIUserInterfaceIdiomPhone)
+#endif
+
+#define IS_IPAD          ( UIUserInterfaceIdiomPad == UI_USER_INTERFACE_IDIOM() )
+
+// DLog is almost a drop-in replacement for NSLog
+// DLog();
+// DLog(@"here");
+// DLog(@"value: %d", x);
+// Unfortunately this doesn't work DLog(aStringVariable); you have to do this instead DLog(@"%@", aStringVariable);
+
+#ifdef DEBUG
+#       define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#       define DLog(...)
+#endif
+
+// ALog always displays output regardless of the DEBUG setting
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+#define ANALYTICS_LOG(message) ([FlurryAPI logEvent:message])
+
+// via http://io.debian.net/~tar/debian/gtamsanalyzer/gtamsanalyzer.app-0.42/Source/appDelegate.m
+#define NSDEF [NSUserDefaults standardUserDefaults]

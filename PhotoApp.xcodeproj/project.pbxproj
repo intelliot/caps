@@ -38,6 +38,7 @@
 		A960446E15906F9A00228B8A /* CleanCapsIcon.fw.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446C15906F9A00228B8A /* CleanCapsIcon.fw.png */; };
 		A960446F15906F9A00228B8A /* CleanCapsIcon.fw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A960446D15906F9A00228B8A /* CleanCapsIcon.fw@2x.png */; };
 		A9D5B106159161730067F6EC /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D5B105159161730067F6EC /* libFlurryAnalytics.a */; };
+		A9E26A2015A3D80200DE392C /* OptionalOrForcedUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E26A1F15A3D80200DE392C /* OptionalOrForcedUpdate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,8 @@
 		A9CE3B5B1591A8BF00AFF8E7 /* FlurryAPI+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlurryAPI+Extensions.h"; sourceTree = "<group>"; };
 		A9D5B104159161730067F6EC /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
 		A9D5B105159161730067F6EC /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		A9E26A1E15A3D80200DE392C /* OptionalOrForcedUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionalOrForcedUpdate.h; sourceTree = "<group>"; };
+		A9E26A1F15A3D80200DE392C /* OptionalOrForcedUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionalOrForcedUpdate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				A9D5B103159161730067F6EC /* FlurryAnalytics */,
+				A9E26A1E15A3D80200DE392C /* OptionalOrForcedUpdate.h */,
+				A9E26A1F15A3D80200DE392C /* OptionalOrForcedUpdate.m */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				61D8EADF156151890009FD3B /* MainViewController.m in Sources */,
 				61D8EAE8156154B10009FD3B /* RenderViewController.m in Sources */,
 				618A2F5815624E910069780D /* WaitingViewController.m in Sources */,
+				A9E26A2015A3D80200DE392C /* OptionalOrForcedUpdate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
